@@ -4,11 +4,23 @@ The following examples are in the format of a Jupyter Notebook.
 
 ## Installing Jupyter Lab
 
-To use Jupyter Notebooks, be sure you've installed Jupyter Lab:
+To use Jupyter Notebooks, be sure you've installed Jupyter Lab and
+the requirements needed for Groq API examples:
 
-`pip install jupyter_client==7.3.4`
+`pip install -r requirements.txt`
 
-Note: If you have issues running Jupyter Lab, the following commands
+You can then launch Jupyter Lab using the following command:
+
+`jupyter lab`
+
+If you're remotely accessing your server, don't forget to setup your tunnel, where
+server_ip is the IP address of your server.
+
+`ssh -L 8888:localhost:8888 server_ip`
+
+<br>
+
+<b> Note:</b> If you have issues running Jupyter Lab, the following commands
 may be helpful.
 
 `find ~ -name jupyter-lab`
@@ -21,7 +33,4 @@ using the path:
 
 `/home/user/.local/bin/jupyter lab`
 
-If you're remotely accessing your server, don't forget to setup your tunnel, where
-server_ip is the IP address of your server.
 
-`ssh -L 8888:localhost:8888 server_ip`
